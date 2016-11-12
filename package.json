@@ -1,0 +1,25 @@
+{
+  "name": "counter-client",
+  "version": "3.7",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "whatever": "echo whatever",
+    "build": "webpack --env.prod -p --progress"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel": "^6.5.2",
+    "babel-core": "^6.18.2",
+    "babel-loader": "^6.2.7",
+    "graceful-fs": "^4.1.10",
+    "html-loader": "^0.4.4",
+    "node-fetch": "^1.6.3",
+    "rimraf": "^2.5.4",
+    "ts-loader": "^1.2.0",
+    "webpack": "2.1.0-beta.20"
+  }
+}
