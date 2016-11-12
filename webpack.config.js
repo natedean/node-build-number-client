@@ -34,23 +34,7 @@ module.exports = (env) => {
 			new webpack.ProvidePlugin({
 				'window.jQuery': 'jquery'
 			})
-		],
-		devServer: {
-			contentBase: path.resolve('dist'),
-			open: true,
-			quiet: false,
-			noInfo: false,
-			watchOptions: {
-				aggregateTimeout: 300,
-				poll: 1000
-			},
-			proxy: {
-				'/api': {
-					target: proxyUri,
-					secure: false
-				}
-			}
-		}
+		]
 	};
 
 	if (!env.prod) {

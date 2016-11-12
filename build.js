@@ -6,7 +6,9 @@ const fs = require('graceful-fs');
 
 const majorMinorVersion = JSON.parse(fs.readFileSync('package.json', 'utf8')).version;
 
-fetch(process.BUILD_ENDPOINT)
+console.log(process.env.BUILD_ENDPOINT);
+
+fetch(process.env.BUILD_ENDPOINT)
 	.then(res => res.json())
 	.then((buildNumber) => {
 		const fullVersionNumber = `${majorMinorVersion}.${buildNumber}`
